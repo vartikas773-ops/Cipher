@@ -57,6 +57,8 @@ An optional `my_logo.png` in the project root will be shown at the top of the si
 - Document content and questions are sent to Groq's API for answer generation; embeddings and similarity search happen locally and are never sent anywhere.
 - Groq's free tier has rate limits (requests/tokens per minute) — fine for personal use and demos, not intended for high-traffic production use.
 
+## LIVE DEMO: https://cipher-any-pdf.streamlit.app/
+
 ## 📄 License
 
 MIT License
