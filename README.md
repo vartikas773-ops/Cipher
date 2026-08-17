@@ -4,6 +4,10 @@ Chat with your PDFs using a hosted LLM. Upload a document, and ask questions abo
 
 **Live demo:**
 
+![Cipher home screen](home-screen.png)
+
+![Cipher chat demo](chat-demo.png)
+
 ## ✨ Features
 
 - 📄 **Upload a PDF** and ask natural-language questions about its contents
@@ -31,7 +35,6 @@ Chat with your PDFs using a hosted LLM. Upload a document, and ask questions abo
 git clone https://github.com/vartikas773-ops/Cipher.git
 cd Cipher
 pip install -r requirements.txt
-
 streamlit run app.py
 ```
 
