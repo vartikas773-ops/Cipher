@@ -13,9 +13,6 @@ from langchain.chains import RetrievalQA
 
 load_dotenv()
 
-# ------------------------------------------------------------------
-# Config
-# ------------------------------------------------------------------
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 DEFAULT_MODEL = "llama-3.1-8b-instant"
@@ -57,9 +54,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ------------------------------------------------------------------
-# Session state
-# ------------------------------------------------------------------
+#session state
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -119,9 +114,7 @@ def process_pdf(uploaded_file, api_key, model_name):
         st.toast(f"Indexed **{uploaded_file.name}** ({len(pages)} pages)", icon="✅")
 
 
-# ------------------------------------------------------------------
-# Sidebar
-# ------------------------------------------------------------------
+# sidebar
 
 with st.sidebar:
     if os.path.exists("my_logo.png"):
@@ -169,9 +162,7 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-# ------------------------------------------------------------------
-# Main area
-# ------------------------------------------------------------------
+# main area
 
 if not st.session_state.qa_chain:
     st.markdown(
